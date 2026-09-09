@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year 6 MacBook Parent Support | Victoria Shanghai Academy</title>
+    
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        vsa: {
+                            blue: '#1e3a8a',
+                            light: '#3b82f6',
+                            gold: '#fbbf24',
+                            dark: '#0f172a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <i class="fa-solid fa-laptop-code text-vsa-blue text-2xl"></i>
+                    <span class="font-bold text-xl tracking-tight text-vsa-dark">VSA Tech Support</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#accounts" class="text-slate-600 hover:text-vsa-blue font-medium transition-colors">Accounts & Login</a>
+                    <a href="#tips" class="text-slate-600 hover:text-vsa-blue font-medium transition-colors">Power Tips</a>
+                    <a href="#mentoring" class="text-slate-600 hover:text-vsa-blue font-medium transition-colors">Mentoring</a>
+                    <a href="#systems" class="text-slate-600 hover:text-vsa-blue font-medium transition-colors">School Systems</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-br from-vsa-blue to-vsa-light text-white pt-20 pb-24 px-4 relative overflow-hidden">
+        <!-- Abstract background pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+                <defs><pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M0 40L40 0H20L0 20M40 40V20L20 40" fill="none" stroke="currentColor" stroke-width="2"/></pattern></defs>
+                <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+            </svg>
+        </div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Year 6 MacBook Rollout:<br><span class="text-vsa-gold">The Parent Playbook</span></h1>
+            <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Welcome to Secondary School! This hub is designed to help parents support their children as they transition to 1:1 digital learning.
+            </p>
+            <a href="#accounts" class="inline-flex items-center gap-2 bg-vsa-gold text-vsa-dark font-semibold px-6 py-3 rounded-full hover:bg-yellow-400 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                Get Started <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+
+        <!-- Accounts Section -->
+        <section id="accounts" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-vsa-dark mb-4">Understanding MacBook Accounts</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">To ensure a safe and managed learning environment, your child's MacBook is configured with specific user profiles. Here is how they work.</p>
+            </div>
+
+            <!-- Crucial IT Alert -->
+            <div class="bg-blue-50 border-l-4 border-vsa-blue p-6 rounded-r-xl shadow-sm mb-10 max-w-4xl mx-auto flex items-start gap-4">
+                <div class="text-vsa-blue mt-1"><i class="fa-solid fa-envelope-open-text text-2xl"></i></div>
+                <div>
+                    <h3 class="text-lg font-bold text-vsa-dark mb-1">Important Note Regarding Logins</h3>
+                    <p class="text-slate-700">
+                        The IT Office will send an email with detailed login instructions <strong>after</strong> the MacBook distribution process is complete. Please look out for this email to complete the final setup steps at home.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Parent Account -->
+                <div class="bg-white rounded-2xl shadow-md border border-slate-100 p-8 hover:shadow-lg transition-shadow relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-vsa-gold text-vsa-dark text-xs font-bold px-3 py-1 rounded-bl-lg">Admin</div>
+                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-vsa-dark mb-3">Parent Account</h3>
+                    <p class="text-slate-600 text-sm mb-4">This is the Administrator account. It allows you to manage the MacBook, install software, and set up Apple Screen Time / Parental Controls.</p>
+                    <ul class="text-sm text-slate-700 space-y-2">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> <strong>Keep this secure.</strong></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-xmark text-red-500 mt-1"></i> Do not give your child access to this password.</li>
+                    </ul>
+                </div>
+
+                <!-- Student Account -->
+                <div class="bg-white rounded-2xl shadow-md border border-slate-100 p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-vsa-dark mb-3">Student Account</h3>
+                    <p class="text-slate-600 text-sm mb-4">This is a Standard User account. This is where your child will log in daily to complete schoolwork, access Managebac, and create projects.</p>
+                    <ul class="text-sm text-slate-700 space-y-2">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> Used for daily learning.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i> Monitored by school policies and parent screen time rules.</li>
+                    </ul>
+                </div>
+
+                <!-- IT Account -->
+                <div class="bg-white rounded-2xl shadow-md border border-slate-100 p-8 hover:shadow-lg transition-shadow opacity-90">
+                    <div class="w-14 h-14 bg-slate-100 text-slate-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-vsa-dark mb-3">IT Support Account</h3>
+                    <p class="text-slate-600 text-sm">This is a hidden administrative account used exclusively by the VSA IT Department. It allows our technicians to provide remote support, push necessary updates, and troubleshoot hardware issues at school.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Power Tips Section -->
+        <section id="tips" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="h-px bg-slate-200 flex-grow"></div>
+                <h2 class="text-3xl font-bold text-vsa-dark text-center"><i class="fa-solid fa-bolt text-vsa-gold mr-2"></i> Power Tips for Tech Success</h2>
+                <div class="h-px bg-slate-200 flex-grow"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Tip 1 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col h-full transform transition hover:-translate-y-1 hover:shadow-md border-t-4 border-t-emerald-400">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-emerald-100 text-emerald-600 p-3 rounded-full"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <h3 class="font-bold text-lg">1. Healthy Balanced Lifestyle</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm flex-grow">Nurture and support a whole-child approach. Ensure they have healthy meals, enough sleep, and ample physical/social exercise. Tech is just one part of their day.</p>
+                </div>
+
+                <!-- Tip 2 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col h-full transform transition hover:-translate-y-1 hover:shadow-md border-t-4 border-t-vsa-blue">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-blue-100 text-blue-600 p-3 rounded-full"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3 class="font-bold text-lg">2. Single Use for Learning</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm flex-grow">Make learning the <strong>one and only</strong> use for the VSA MacBook. Keep gaming, social media, and entertainment on separate home devices to build strong psychological boundaries.</p>
+                </div>
+
+                <!-- Tip 3 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col h-full transform transition hover:-translate-y-1 hover:shadow-md border-t-4 border-t-purple-400">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-purple-100 text-purple-600 p-3 rounded-full"><i class="fa-solid fa-house-laptop"></i></div>
+                        <h3 class="font-bold text-lg">3. Create a Study Zone</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm flex-grow">Set up a dedicated work/study zone at home. A place your child can organize and make their own, ideally in a shared family space where parent mentoring and passive monitoring can easily take place.</p>
+                </div>
+
+                <!-- Tip 4 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col h-full transform transition hover:-translate-y-1 hover:shadow-md border-t-4 border-t-orange-400">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-orange-100 text-orange-600 p-3 rounded-full"><i class="fa-regular fa-comments"></i></div>
+                        <h3 class="font-bold text-lg">4. Set Clear Expectations</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm flex-grow">Have a "Media Talk." Co-create family tech rules. When and where are devices allowed? What are the "off" times? What happens if they encounter a problem online?</p>
+                </div>
+
+                <!-- Tip 5 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col h-full transform transition hover:-translate-y-1 hover:shadow-md border-t-4 border-t-rose-400">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-rose-100 text-rose-600 p-3 rounded-full"><i class="fa-solid fa-utensils"></i></div>
+                        <h3 class="font-bold text-lg">5. Tech-Free Dinners</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm flex-grow">Have regular family dinners with a strict "no phones/devices" rule. This is a critical time to talk, listen, and reconnect without digital distractions.</p>
+                </div>
+
+                <!-- Tip 6 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col h-full transform transition hover:-translate-y-1 hover:shadow-md border-t-4 border-t-sky-400">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-sky-100 text-sky-600 p-3 rounded-full"><i class="fa-regular fa-calendar-check"></i></div>
+                        <h3 class="font-bold text-lg">6. Sync Your Calendars</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm flex-grow">Import the Managebac Tasks Calendar and the VSA Parent Calendar into your personal phone calendar app. This lets you stay on top of deadlines without constantly logging in.</p>
+                </div>
+                
+                <!-- Tip 7 (Centered in grid if odd number, or just spans) -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col h-full transform transition hover:-translate-y-1 hover:shadow-md border-t-4 border-t-indigo-400 md:col-span-2 lg:col-span-3 lg:w-2/3 lg:mx-auto">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full"><i class="fa-solid fa-brain"></i></div>
+                        <h3 class="font-bold text-lg">7. Focus on ATL (Approaches to Learning) Skills</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm flex-grow">Technology is a tool; the goal is building skills. Check in on <em>how</em> your child is learning. Ask them: How are you keeping your digital files organized? How do you track your to-do list? How do you manage your time when completing a task? Help them build these organizational systems early on.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mentoring vs Monitoring Section -->
+        <section id="mentoring" class="bg-white rounded-3xl shadow-sm p-8 md:p-12 border border-slate-100 scroll-mt-24">
+            <h2 class="text-3xl font-bold text-vsa-dark mb-6 text-center">From Monitoring to Mentoring</h2>
+            <p class="text-center text-slate-600 mb-10 max-w-3xl mx-auto">As children transition into Secondary School, our role as parents must shift from strict authoritarian control to collaborative mentoring. We want to raise healthy adults, not just restrict children.</p>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="flex-1 bg-red-50 p-6 rounded-2xl border border-red-100">
+                    <h3 class="text-xl font-bold text-red-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-ban"></i> Avoid: Monitoring & Surveillance</h3>
+                    <ul class="space-y-3 text-red-700 text-sm">
+                        <li><i class="fa-solid fa-xmark mr-2"></i> Eroding trust through secret surveillance</li>
+                        <li><i class="fa-solid fa-xmark mr-2"></i> Setting unilateral rules without discussion</li>
+                        <li><i class="fa-solid fa-xmark mr-2"></i> "Helicopter" parenting</li>
+                        <li><i class="fa-solid fa-xmark mr-2"></i> Doing the tech setup/organization <em>for</em> them</li>
+                        <li><i class="fa-solid fa-xmark mr-2"></i> Relying <em>only</em> on tech systems (like Screen Time) to parent</li>
+                    </ul>
+                </div>
+                
+                <div class="flex-1 bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+                    <h3 class="text-xl font-bold text-emerald-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-seedling"></i> Do: Coaching & Mentoring</h3>
+                    <ul class="space-y-3 text-emerald-700 text-sm">
+                        <li><i class="fa-solid fa-check mr-2"></i> Always protect and build mutual trust</li>
+                        <li><i class="fa-solid fa-check mr-2"></i> Foster a collaborative, growth mindset</li>
+                        <li><i class="fa-solid fa-check mr-2"></i> Scaffold support: Empower them when they are able, help when they aren't</li>
+                        <li><i class="fa-solid fa-check mr-2"></i> Coach strategies for dealing with digital distractions</li>
+                        <li><i class="fa-solid fa-check mr-2"></i> "Trust, but verify"</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Zone of Proximal Development Visual -->
+            <div class="mt-12 text-center bg-slate-50 p-6 rounded-xl border border-slate-200">
+                <h4 class="font-bold text-lg mb-4 text-slate-700">The Parental Support Zone</h4>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-sm font-medium">
+                    <div class="bg-white px-4 py-3 rounded shadow-sm w-full md:w-1/3 border border-slate-200">
+                        <span class="text-slate-500 block text-xs uppercase tracking-wide mb-1">Independence</span>
+                        "What I can do myself"
+                    </div>
+                    <i class="fa-solid fa-plus text-slate-400 hidden md:block"></i>
+                    <div class="bg-vsa-blue text-white px-4 py-3 rounded shadow-sm w-full md:w-1/3">
+                        <span class="text-blue-200 block text-xs uppercase tracking-wide mb-1">Parental Scaffolding</span>
+                        "What I can do with help"
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-slate-400 hidden md:block"></i>
+                    <div class="bg-vsa-gold text-vsa-dark px-4 py-3 rounded shadow-sm w-full md:w-1/3">
+                        <span class="text-yellow-800 block text-xs uppercase tracking-wide mb-1">Growth</span>
+                        "Tackling what I couldn't do yet"
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- School Systems Section -->
+        <section id="systems" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-vsa-dark mb-8 text-center">Essential School Systems</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Portal -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-vsa-light transition-colors group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-blue-50 p-4 rounded-xl text-vsa-blue group-hover:bg-vsa-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-building-columns text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">VSA Portal</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">Your starting point for school administration and overarching student data.</p>
+                    <ul class="space-y-2 text-sm text-slate-700 list-disc list-inside">
+                        <li>Reporting student absences</li>
+                        <li>Viewing official notices and letters</li>
+                        <li>Booking events and activities</li>
+                        <li>Accessing academic reports & timetables</li>
+                        <li>Payment gateways</li>
+                    </ul>
+                </div>
+                
+                <!-- Managebac -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-emerald-400 transition-colors group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-emerald-50 p-4 rounded-xl text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-book-open-reader text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Managebac</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">The core Curriculum Management System used daily by students and teachers.</p>
+                    <ul class="space-y-2 text-sm text-slate-700 list-disc list-inside">
+                        <li>Viewing current subjects and units of inquiry</li>
+                        <li>Tracking homework, tasks, and deadlines</li>
+                        <li>Viewing teacher feedback on assignments</li>
+                        <li>Calendar of academic events</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Support Contacts & Footer -->
+    <footer class="bg-vsa-dark text-slate-300 py-12 border-t-4 border-vsa-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-10 text-center">
+                <h2 class="text-2xl font-bold text-white mb-2">Need Assistance?</h2>
+                <p class="text-slate-400">The VSA Technology Team is here to help support your family's digital transition.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Contact 1 -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center">
+                    <div class="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center text-vsa-gold mx-auto mb-4">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h4 class="font-bold text-white text-lg">Mr. Andrew Chiu</h4>
+                    <p class="text-sm text-slate-400 mb-3">Head of Technology & Innovation</p>
+                    <a href="mailto:achiu@vsa.edu.hk" class="text-vsa-light hover:text-white text-sm"><i class="fa-solid fa-envelope mr-1"></i> achiu@vsa.edu.hk</a>
+                </div>
+                
+                <!-- Contact 2 -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center">
+                    <div class="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center text-vsa-gold mx-auto mb-4">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h4 class="font-bold text-white text-lg">Mr. Ronald Tang</h4>
+                    <p class="text-sm text-slate-400 mb-3">Head of IT Office</p>
+                    <a href="mailto:itsupport@vsa.edu.hk" class="text-vsa-light hover:text-white text-sm"><i class="fa-solid fa-envelope mr-1"></i> itsupport@vsa.edu.hk</a>
+                </div>
+                
+                <!-- Contact 3 -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center">
+                    <div class="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center text-vsa-gold mx-auto mb-4">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h4 class="font-bold text-white text-lg">Mr. Stephen Wong</h4>
+                    <p class="text-sm text-slate-400 mb-3">Technology Specialist</p>
+                    <a href="mailto:itsupport@vsa.edu.hk" class="text-vsa-light hover:text-white text-sm"><i class="fa-solid fa-envelope mr-1"></i> itsupport@vsa.edu.hk</a>
+                </div>
+            </div>
+            
+            <div class="text-center pt-8 border-t border-slate-700 text-sm">
+                <p>&copy; 2026 Victoria Shanghai Academy. Tech & Innovation Department.</p>
+                <p class="mt-2 text-slate-500">Value • Strive • Act | 明善 • 奮進 • 力行</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
