@@ -6,7 +6,6 @@
     <title>Year 6 MacBook Parent Support | Victoria Shanghai Academy</title>
     
     <!-- Fonts and Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Tailwind CSS -->
@@ -16,14 +15,13 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['Helvetica', 'Arial', 'Heiti TC', 'sans-serif'],
                     },
                     colors: {
                         vsa: {
-                            blue: '#1e3a8a',
-                            light: '#3b82f6',
-                            gold: '#fbbf24',
-                            dark: '#0f172a'
+                            blue: '#004C80',
+                            red: '#88002B',
+                            dark: '#1e293b'
                         }
                     }
                 }
@@ -60,7 +58,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-gradient-to-br from-vsa-blue to-vsa-light text-white pt-20 pb-24 px-4 relative overflow-hidden">
+    <header class="bg-gradient-to-br from-vsa-blue to-blue-900 text-white pt-20 pb-24 px-4 relative overflow-hidden">
         <!-- Abstract background pattern -->
         <div class="absolute inset-0 opacity-10">
             <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
@@ -70,11 +68,11 @@
         </div>
         
         <div class="max-w-4xl mx-auto text-center relative z-10">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Year 6 MacBook Rollout:<br><span class="text-vsa-gold">The Parent Playbook</span></h1>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Year 6 MacBook Rollout:<br><span class="text-blue-200">The Parent Playbook</span></h1>
             <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
                 Welcome to Secondary School! This hub is designed to help parents support their children as they transition to 1:1 digital learning.
             </p>
-            <a href="#accounts" class="inline-flex items-center gap-2 bg-vsa-gold text-vsa-dark font-semibold px-6 py-3 rounded-full hover:bg-yellow-400 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <a href="#accounts" class="inline-flex items-center gap-2 bg-vsa-red text-white font-semibold px-6 py-3 rounded-full hover:bg-red-900 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Get Started <i class="fa-solid fa-arrow-down"></i>
             </a>
         </div>
@@ -104,7 +102,7 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Parent Account -->
                 <div class="bg-white rounded-2xl shadow-md border border-slate-100 p-8 hover:shadow-lg transition-shadow relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-vsa-gold text-vsa-dark text-xs font-bold px-3 py-1 rounded-bl-lg">Admin</div>
+                    <div class="absolute top-0 right-0 bg-vsa-red text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Admin</div>
                     <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-user-shield"></i>
                     </div>
@@ -144,7 +142,7 @@
         <section id="tips" class="scroll-mt-24">
             <div class="flex items-center gap-4 mb-10">
                 <div class="h-px bg-slate-200 flex-grow"></div>
-                <h2 class="text-3xl font-bold text-vsa-dark text-center"><i class="fa-solid fa-bolt text-vsa-gold mr-2"></i> Power Tips for Tech Success</h2>
+                <h2 class="text-3xl font-bold text-vsa-dark text-center"><i class="fa-solid fa-bolt text-vsa-red mr-2"></i> Power Tips for Tech Success</h2>
                 <div class="h-px bg-slate-200 flex-grow"></div>
             </div>
             
@@ -214,6 +212,113 @@
             </div>
         </section>
 
+        <!-- Laptop Use in Classes Section -->
+        <section id="laptop-use" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-vsa-dark mb-8 text-center">Laptop Use in Year 6 Classes</h2>
+            <p class="text-center text-slate-600 mb-12 max-w-3xl mx-auto">This week, Year 6 students were issued their school laptops. These devices are key tools designed to enhance learning, build digital literacy, and foster essential Approaches to Learning (ATL) skills across subjects. Here is a look at how they are integrated.</p>
+            
+            <div class="space-y-12">
+                <!-- Classroom Expectations -->
+                <div class="bg-indigo-50 rounded-2xl p-8 border border-indigo-100 shadow-sm">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-chalkboard-user text-indigo-600"></i> Classroom Expectations & Guidance
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-laptop-medical text-indigo-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-indigo-950">"Screens Down"</h4>
+                                <p class="text-sm text-indigo-800">Students immediately close or lower their laptop lids when the teacher is speaking or during non-digital instruction.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-eye text-indigo-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-indigo-950">"Open Learning = Open Screen"</h4>
+                                <p class="text-sm text-indigo-800">Active windows must be relevant to the class task. Background apps, hidden desktops, or tab-swapping are not permitted.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-person-chalkboard text-indigo-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-indigo-950">Teacher-Directed Usage</h4>
+                                <p class="text-sm text-indigo-800">Laptops are used only when explicitly directed by the teacher for learning activities.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-clipboard-check text-indigo-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-indigo-950">Assessment & Submissions</h4>
+                                <p class="text-sm text-indigo-800">Specific assessment guidelines, rubrics, and templates will be posted and managed through ManageBac.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subject Specifics Grid -->
+                <div>
+                    <h3 class="text-2xl font-bold text-vsa-dark mb-6 text-center">Subject-Specific Integration</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Design -->
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                            <h4 class="font-bold text-lg text-vsa-dark mb-4 border-b pb-2">Design</h4>
+                            <ul class="space-y-3 text-sm text-slate-700">
+                                <li><strong class="text-slate-900">3D Digital Design:</strong> Creating virtual worlds using tools like Delightex and TinkerCAD.</li>
+                                <li><strong class="text-slate-900">Documentation:</strong> Design ideas, process work, and learning reflections are documented using Google Slides.</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- INS -->
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                            <h4 class="font-bold text-lg text-vsa-dark mb-4 border-b pb-2">Individuals & Societies</h4>
+                            <ul class="space-y-3 text-sm text-slate-700">
+                                <li><strong class="text-slate-900">Structured Inquiries:</strong> Using research templates with guided questions to plan research.</li>
+                                <li><strong class="text-slate-900">Citing Sources:</strong> Learning to cite websites properly to support academic integrity.</li>
+                                <li><strong class="text-slate-900">Presentations:</strong> Building digital research presentations.</li>
+                            </ul>
+                        </div>
+
+                        <!-- English -->
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                            <h4 class="font-bold text-lg text-vsa-dark mb-4 border-b pb-2">English Lang & Lit</h4>
+                            <ul class="space-y-3 text-sm text-slate-700">
+                                <li><strong class="text-slate-900">Reading Comprehension:</strong> Utilizing platforms like Read Theory for practice.</li>
+                                <li><strong class="text-slate-900">Collaborative Learning:</strong> Group collaboration via Google Drive, shared documents, and interactive platforms.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Science -->
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                            <h4 class="font-bold text-lg text-vsa-dark mb-4 border-b pb-2">Science</h4>
+                            <ul class="space-y-3 text-sm text-slate-700">
+                                <li><strong class="text-slate-900">Scientific Writing:</strong> Building research, lab report, and essay writing skills.</li>
+                                <li><strong class="text-slate-900">Learning Checks:</strong> Interactive activities track progress and support individual learning.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Language Acquisition -->
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                            <h4 class="font-bold text-lg text-vsa-dark mb-4 border-b pb-2">Language Acquisition</h4>
+                            <ul class="space-y-3 text-sm text-slate-700">
+                                <li><strong class="text-slate-900">Vocab & Grammar:</strong> Interactive platforms (Quizlet, Kahoot, Blooket) reinforce structures.</li>
+                                <li><strong class="text-slate-900">Collaborative Discussion:</strong> Google Drive is used for sharing ideas and language practice.</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Key Platforms -->
+                        <div class="bg-slate-800 text-white rounded-xl shadow-sm border border-slate-700 p-6 flex flex-col justify-center">
+                            <h4 class="font-bold text-lg text-blue-300 mb-4 border-b border-slate-600 pb-2">Key Platforms</h4>
+                            <ul class="space-y-2 text-sm text-slate-300">
+                                <li><strong class="text-white">Learning:</strong> ManageBac</li>
+                                <li><strong class="text-white">Collaboration:</strong> Google Workspace</li>
+                                <li><strong class="text-white">Interactive:</strong> Read Theory, TinkerCAD, Delightex, Quizlet, Kahoot, Blooket</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Mentoring vs Monitoring Section -->
         <section id="mentoring" class="bg-white rounded-3xl shadow-sm p-8 md:p-12 border border-slate-100 scroll-mt-24">
             <h2 class="text-3xl font-bold text-vsa-dark mb-6 text-center">From Monitoring to Mentoring</h2>
@@ -257,8 +362,8 @@
                         "What I can do with help"
                     </div>
                     <i class="fa-solid fa-arrow-right text-slate-400 hidden md:block"></i>
-                    <div class="bg-vsa-gold text-vsa-dark px-4 py-3 rounded shadow-sm w-full md:w-1/3">
-                        <span class="text-yellow-800 block text-xs uppercase tracking-wide mb-1">Growth</span>
+                    <div class="bg-vsa-red text-white px-4 py-3 rounded shadow-sm w-full md:w-1/3">
+                        <span class="text-red-200 block text-xs uppercase tracking-wide mb-1">Growth</span>
                         "Tackling what I couldn't do yet"
                     </div>
                 </div>
@@ -270,7 +375,7 @@
             <h2 class="text-3xl font-bold text-vsa-dark mb-8 text-center">Essential School Systems</h2>
             <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <!-- Portal -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-vsa-light transition-colors group">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-vsa-blue transition-colors group">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="bg-blue-50 p-4 rounded-xl text-vsa-blue group-hover:bg-vsa-blue group-hover:text-white transition-colors">
                             <i class="fa-solid fa-building-columns text-2xl"></i>
@@ -309,7 +414,7 @@
     </main>
 
     <!-- Support Contacts & Footer -->
-    <footer class="bg-vsa-dark text-slate-300 py-12 border-t-4 border-vsa-gold">
+    <footer class="bg-vsa-dark text-slate-300 py-12 border-t-4 border-vsa-red">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-10 text-center">
                 <h2 class="text-2xl font-bold text-white mb-2">Need Assistance?</h2>
@@ -319,32 +424,32 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                 <!-- Contact 1 -->
                 <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center">
-                    <div class="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center text-vsa-gold mx-auto mb-4">
+                    <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-vsa-red mx-auto mb-4">
                         <i class="fa-solid fa-user-tie"></i>
                     </div>
                     <h4 class="font-bold text-white text-lg">Mr. Andrew Chiu</h4>
                     <p class="text-sm text-slate-400 mb-3">Head of Technology & Innovation</p>
-                    <a href="mailto:achiu@vsa.edu.hk" class="text-vsa-light hover:text-white text-sm"><i class="fa-solid fa-envelope mr-1"></i> achiu@vsa.edu.hk</a>
+                    <a href="mailto:achiu@vsa.edu.hk" class="text-blue-300 hover:text-white text-sm"><i class="fa-solid fa-envelope mr-1"></i> achiu@vsa.edu.hk</a>
                 </div>
                 
                 <!-- Contact 2 -->
                 <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center">
-                    <div class="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center text-vsa-gold mx-auto mb-4">
-                        <i class="fa-solid fa-user-tie"></i>
+                    <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-vsa-red mx-auto mb-4">
+                        <i class="fa-solid fa-headset"></i>
                     </div>
                     <h4 class="font-bold text-white text-lg">Mr. Ronald Tang</h4>
                     <p class="text-sm text-slate-400 mb-3">Head of IT Office</p>
-                    <a href="mailto:itsupport@vsa.edu.hk" class="text-vsa-light hover:text-white text-sm"><i class="fa-solid fa-envelope mr-1"></i> itsupport@vsa.edu.hk</a>
+                    <a href="mailto:itsupport@vsa.edu.hk" class="text-blue-300 hover:text-white text-sm"><i class="fa-solid fa-envelope mr-1"></i> itsupport@vsa.edu.hk</a>
                 </div>
                 
                 <!-- Contact 3 -->
                 <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center">
-                    <div class="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center text-vsa-gold mx-auto mb-4">
-                        <i class="fa-solid fa-user-tie"></i>
+                    <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-vsa-red mx-auto mb-4">
+                        <i class="fa-solid fa-laptop-medical"></i>
                     </div>
                     <h4 class="font-bold text-white text-lg">Mr. Stephen Wong</h4>
                     <p class="text-sm text-slate-400 mb-3">Technology Specialist</p>
-                    <a href="mailto:itsupport@vsa.edu.hk" class="text-vsa-light hover:text-white text-sm"><i class="fa-solid fa-envelope mr-1"></i> itsupport@vsa.edu.hk</a>
+                    <a href="mailto:itsupport@vsa.edu.hk" class="text-blue-300 hover:text-white text-sm"><i class="fa-solid fa-envelope mr-1"></i> itsupport@vsa.edu.hk</a>
                 </div>
             </div>
             
