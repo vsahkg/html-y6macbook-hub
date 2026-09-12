@@ -15,12 +15,13 @@
             theme: {
                 extend: {
                     fontFamily: {
+                        // VSA Brand Guideline: Helvetica for English, Heiti TC for Chinese
                         sans: ['Helvetica', 'Arial', 'Heiti TC', 'sans-serif'],
                     },
                     colors: {
                         vsa: {
-                            blue: '#004C80',
-                            red: '#88002B',
+                            blue: '#004C80', // Official Pantone 2955C
+                            red: '#88002B',  // Official Pantone 202C
                             dark: '#1e293b'
                         }
                     }
@@ -40,7 +41,7 @@
 <body class="bg-slate-50 text-slate-800 antialiased">
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0 flex items-center gap-3">
@@ -48,10 +49,10 @@
                     <span class="font-bold text-xl tracking-tight text-vsa-dark">VSA Tech Support</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#accounts" class="text-slate-600 hover:text-vsa-blue font-medium transition-colors">Accounts & Login</a>
+                    <a href="#accounts" class="text-slate-600 hover:text-vsa-blue font-medium transition-colors">Accounts</a>
+                    <a href="#laptop-use" class="text-slate-600 hover:text-vsa-blue font-medium transition-colors">Classroom Use</a>
                     <a href="#tips" class="text-slate-600 hover:text-vsa-blue font-medium transition-colors">Power Tips</a>
-                    <a href="#mentoring" class="text-slate-600 hover:text-vsa-blue font-medium transition-colors">Mentoring</a>
-                    <a href="#systems" class="text-slate-600 hover:text-vsa-blue font-medium transition-colors">School Systems</a>
+                    <a href="#faq" class="text-slate-600 hover:text-vsa-blue font-medium transition-colors">FAQ</a>
                 </div>
             </div>
         </div>
@@ -214,8 +215,8 @@
 
         <!-- Laptop Use in Classes Section -->
         <section id="laptop-use" class="scroll-mt-24">
-            <h2 class="text-3xl font-bold text-vsa-dark mb-8 text-center">Laptop Use in Year 6 Classes</h2>
-            <p class="text-center text-slate-600 mb-12 max-w-3xl mx-auto">This week, Year 6 students were issued their school laptops. These devices are key tools designed to enhance learning, build digital literacy, and foster essential Approaches to Learning (ATL) skills across subjects. Here is a look at how they are integrated.</p>
+            <h2 class="text-3xl font-bold text-vsa-dark mb-8 text-center">Focus: Laptop Use in Year 6 Classes</h2>
+            <p class="text-left text-slate-600 mb-12 max-w-3xl mx-auto">This sections provides an insight for parents for how laptops are used within the classroom at Year 6 level. The below examples are drawn direct from subject teachers in term 1 of 2026-27 school year. These devices are key tools designed to enhance learning, build digital literacy, and foster essential Approaches to Learning (ATL) skills across subjects. Here is a look at how they are integrated.</p>
             
             <div class="space-y-12">
                 <!-- Classroom Expectations -->
@@ -282,7 +283,7 @@
                         <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
                             <h4 class="font-bold text-lg text-vsa-dark mb-4 border-b pb-2">English Lang & Lit</h4>
                             <ul class="space-y-3 text-sm text-slate-700">
-                                <li><strong class="text-slate-900">Reading Comprehension:</strong> Utilizing platforms like Read Theory for practice.</li>
+                                <li><strong class="text-slate-900">Reading Comprehension:</strong> Utilising platforms like Read Theory for practice.</li>
                                 <li><strong class="text-slate-900">Collaborative Learning:</strong> Group collaboration via Google Drive, shared documents, and interactive platforms.</li>
                             </ul>
                         </div>
@@ -408,6 +409,124 @@
                         <li>Calendar of academic events</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <!-- Frequently Asked Questions -->
+        <section id="faq" class="scroll-mt-24">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-vsa-dark mb-4">Frequently Asked Questions</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Common questions about re-imaging, laptop care, and school digital policies.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <details class="group bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg text-vsa-dark">
+                        What does "re-imaging" mean, and will it erase my child's files?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600">
+                        <p class="mb-3">Re-imaging means replacing all existing contents of the hard disk with standardized VSA software and settings. <strong>This process will erase all content currently on the MacBook.</strong></p>
+                        <p>It is vital that students back up their important files before bringing their MacBook in for re-imaging. The school does not provide a backup service. We recommend students use their school Google Drive, which acts as a secure backup medium.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="group bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg text-vsa-dark">
+                        What happens to the software we (parents) already installed?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600">
+                        <p>Any additional software you installed will be erased during re-imaging. You will need to re-install these programs once the laptop is returned to you. Parents will be provided with an Administrator account precisely so you can perform software installations and supervise the device at home.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="group bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg text-vsa-dark">
+                        Can students install games or other software on the laptops?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600">
+                        <p>No. The student login is a standard user account with no authority to install software or modify essential computer settings. Only the Parent or IT Admin accounts have the rights to install software or perform system configurations.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="group bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg text-vsa-dark">
+                        What happens if the laptop is accidentally damaged?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600">
+                        <p class="mb-3">If there is any damage, students should bring the laptop to the school’s IT Office for immediate inspection.</p>
+                        <p class="mb-3">MacBooks purchased through the school vendor program (Senco) include AppleCare+, which extends coverage to three years and adds up to two incidents of accidental damage protection every 12 months (subject to a reduced service fee). These devices are also eligible for a loan unit during repair.</p>
+                        <p>MacBooks <em>not</em> purchased through the school program will receive technical advice, but repair logistics remain the family's responsibility.</p>
+                    </div>
+                </details>
+                
+                <!-- FAQ 5 -->
+                <details class="group bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg text-vsa-dark">
+                        What happens if my laptop is lost or stolen?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600">
+                        <p>As with other school property issued to students (such as library books), the family is responsible if the item is lost or stolen. The student will need to purchase a replacement laptop.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ 6 -->
+                <details class="group bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg text-vsa-dark">
+                        What about protective cases and carrying bags?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600">
+                        <p class="mb-3">VSA does not provide a separate laptop carrying bag, as carrying a second bag alongside a regular school backpack is not ideal. Parents should ensure their child's school bag provides adequate room and protection.</p>
+                        <p><strong>We highly recommend</strong> purchasing a protective hard shell case or padded sleeve. Since all school MacBooks look identical, using a colored case, unique stickers (on the case, not the laptop), or distinct name tags is crucial for easy identification.</p>
+                    </div>
+                </details>
+                
+                <!-- FAQ 7 -->
+                <details class="group bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg text-vsa-dark">
+                        What is the expectation for battery life and charging?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600">
+                        <p>Experience has shown that one full charge is generally enough for a whole day of school. <strong>Students are expected to arrive at school with their computer fully charged.</strong> However, if a laptop runs out of battery, there are power points available in all VSA classrooms and public areas.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ 8 -->
+                <details class="group bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-lg text-vsa-dark">
+                        Do parents need to purchase additional educational software?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600">
+                        <p>No. VSA utilizes cloud-based educational platforms (like Google Workspace and Managebac) as our backbone. The school does not require parents to purchase additional software titles for use in the coming school year.</p>
+                    </div>
+                </details>
             </div>
         </section>
 
